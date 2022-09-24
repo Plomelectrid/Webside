@@ -1,0 +1,411 @@
+/* > > > > > > > >  HEADER  < < < < < < < < */
+.header-body::after{
+  content: '';
+  background-image: url(../src/bg-header.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  height: 88vh;
+  width: 100%;
+}
+
+.content-header{
+  background-color: rgba(190, 190, 190, 0.8);
+  height: 88vh;
+  left: 50%;
+  margin-left: -25%;
+  position: absolute;
+  width: 50%;
+  z-index: 1;
+}
+
+.logo-Plomelectrid{
+  height: 40%;
+  margin-top: 10vh;
+}
+
+.text-presentation{
+  line-height: 1.7;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* > > > > > > > >  SECTION  < < < < < < < < */
+.grid-maintenance{
+  border: 1px solid;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 20, 0.25) 0px 0px 0px 0px;
+	transition: all .55s ease-in-out;
+}
+
+.grid-maintenance:hover{
+	box-shadow: rgba(0,0,20,0.25) 12px 9px 4px 0px;
+	transition: all .2s ease-in-out;
+}
+
+.grid-installation{
+  border: 1px solid;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 20, 0.25) 0px 0px 0px 0px;
+	transition: all .55s ease-in-out;
+}
+
+.grid-installation:hover{
+	box-shadow: rgba(0,0,20,0.25) 12px 9px 4px 0px;
+	transition: all .2s ease-in-out;
+}
+
+.grid-security{
+  border: 1px solid;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 20, 0.25) 0px 0px 0px 0px;
+	transition: all .55s ease-in-out;
+}
+
+.grid-security:hover{
+	box-shadow: rgba(0,0,20,0.25) 12px 9px 4px 0px;
+	transition: all .2s ease-in-out;
+}
+
+
+/* > > > > > > > >  FOOTER  < < < < < < < < */
+.container-footer{
+  height: 15vh;
+  width: 90vw;
+  margin: auto;
+  overflow: hidden;
+  padding: 2rem 1rem;
+}
+
+.baner-plomelectrid{
+  height: 30%;
+}
+
+.copyright{
+  margin-top: 20px;
+  padding-bottom: 15px;
+}
+
+
+/* > > > > > > > >  Letter  < < < < < < < < */
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+/* >>> A <<< */
+a{
+  text-decoration: none;
+}
+
+/* >>> B <<< */
+.bg-blue{
+  background-color: rgb(50,100,140);
+}
+
+.bg-white{
+  background-color: rgb(255, 255, 255);
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
+.border-b-rds-4{
+  border-bottom: 4px solid;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.border-b-blue{
+  color: rgb(50,100,140);
+  transition: all .55s ease-in-out;
+}
+
+.border-b-white{
+  border-bottom-color: rgb(255, 255, 255);
+  transition: all .55s ease-in-out;
+}
+
+button{
+  border: 1px solid;
+	border-radius: 15px;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 5px 15px;
+}
+
+.bttn-blue{
+	background-color: rgba(0,0,0,0);
+	border-color: rgb(50,100,140);
+	color: rgb(50,100,140);
+	transition: background-color .55s, border-color .55s, color .55s;
+}
+
+.bttn-blue:hover{
+	background-color: rgb(50,100,140);
+	border-color: rgb(50,100,140);
+	color: rgb(250,250,250);
+	transition: all .3s ease-in-out;
+}
+
+.bttn-blue:focus{
+	background-color: rgb(20,70,110);
+	border-color: rgb(20,70,110);
+	color: rgb(250,250,250);
+	transition: all .0s linear;
+}
+
+.bttn-whatsapp{
+	background-color: rgba(0,0,0,0);
+	border-color: rgb(50,100,140);
+	border-radius: 10px;
+	color: rgb(250,250,250);
+	transition: background-color .55s, border-color .55s, color .55s;
+}
+
+.bttn-whatsapp:hover{
+	background-color: rgb(37, 211, 102);
+	border-color: rgb(37, 211, 102);
+	transition: all .3s ease-in-out;
+}
+
+.bttn-whatsapp:focus{
+	background-color: rgb(27, 164, 94);
+	border-color: rgb(27, 164, 94);
+	transition: all .0s linear;
+}
+
+.bttn-facebook{
+	background-color: rgba(0,0,0,0);
+	border-color: rgb(50,100,140);
+	border-radius: 10px;
+	color: rgb(250,250,250);
+	transition: background-color .55s, border-color .55s, color .55s;
+}
+
+.bttn-facebook:hover{
+	background-color: rgb(66,103,180);
+	border-color: rgb(66,103,180);
+	transition: all .3s ease-in-out;
+}
+
+.bttn-facebook:focus{
+	background-color: rgb(30,73,148);
+	border-color: rgb(30,73,148);
+	transition: all .0s linear;
+}
+
+/* >>> C max-width<<< */
+.container{
+  margin: auto;
+  overflow: hidden;
+  padding: 2rem 1rem;
+}
+
+/* >>> G <<< */
+.grid-2-hz{
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-2-vt{
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.grid-3{
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-3-vt{
+  display: grid;
+  grid-gap: 10px;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+/* >>> I <<< */
+.icon-pa{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* >>> M <<< */
+.m-10{
+  margin: 10px;
+}
+
+.m-15{
+  margin: 15px;
+}
+
+.mb-10{
+  margin-bottom: 10px;
+}
+
+.mb-15{
+  margin-bottom: 15px;
+}
+
+.ml-15{
+  margin-left: 15px;
+}
+
+.mt-10{
+  margin-top: 10px;
+}
+
+.mt-20{
+  margin-top: 20px;
+}
+
+/* >>> P <<< */
+.pb-15{
+  padding-bottom: 15px;
+}
+
+/* >>> T <<< */
+.text-c{
+  text-align: center;
+}
+
+.text-l{
+  text-align: left;
+}
+
+.text-r{
+  text-align: right;
+}
+
+.text-jt{
+  text-align: justify;
+}
+
+.text-smp{
+  font-size: 12px;
+}
+
+.text-black{
+  color: rgb(0, 0, 0);
+}
+
+.text-blue{
+  color: rgb(50,100,140);
+}
+
+.text-light{
+  color: rgb(255, 250, 250);
+}
+
+.text-title-1{
+  font-size: 34px;
+}
+
+.text-title-2{
+  font-size: 20px;
+}
+
+.text-title-black{
+  color: rgb(0,0,0);
+  transition: all .55s ease-in-out;
+}
+
+.text-title-blue{
+  color: rgb(50,100,140);
+  transition: all .2s ease-in-out;
+}
+
+/* >>> U <<< */
+ul{
+  list-style-position: inside;
+}
+
+li{
+  line-height: 1.5;
+}
+
+
+
+
+@media (max-width: 640px) {
+  .header-body::after{
+    height: 60vh;
+    width: 100%;
+  }
+
+  .content-header{
+    height: 60vh;
+    left: 40%;
+    margin-left: -25%;
+    position: absolute;
+    width: 70%;
+    z-index: 1;
+  }
+
+  .logo-Plomelectrid{
+    height: 25%;
+  }
+
+  .header-body .text-title-1{
+    font-size: 28px;
+  }
+
+  .text-presentation{
+    font-size: 18px;
+  }
+
+  .grid-3{
+    grid-template-columns: 1fr;
+  }
+
+  .grid-2-hz{
+    grid-template-columns: 1fr;
+  }
+
+  .container .text-title-1{
+    font-size: 28px;
+  }
+
+  .container .text-title-2{
+    font-size: 18px;
+  }
+
+  .container .text-smp{
+    font-size: 9px;
+  }
+
+  .container .icon-pa{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .container-footer{
+    height: 30vh;
+    width: 90vw;
+    margin: auto;
+    overflow: hidden;
+    padding: 1rem 1rem 0rem 1rem;
+  }
+
+  .footer-banner{
+    height: 15vh;
+  }
+
+  .baner-plomelectrid{
+    height: 100%;
+  }
+
+  .footer-banner p{
+    height: 20vh;
+  }
+
+  .copyright{
+    font-size: 12px;
+    margin-top: 5px;
+    padding-bottom: 15px;
+  }
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="icon" href="../src/logo-Plomelectrid2.png">
+    <!--CUSTOM STYLES-->
+    <link rel="stylesheet" href="../css/mainstyle.css">
+    <link rel="stylesheet" href="../css/contactstyle.css">
+    <!--ICONS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+    <!--JAVASCRIPT-->
+    <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript"> emailjs.init('y4Rz-vTuUMKMC5sdF') </script>
+  </head>
+  <body>
+
+		<nav class="content-nav">
+			<ul>
+				<li class="nav-return">
+          <a href="../" class="text-lig
+          ht"><i class="fa fa-arrow-left fa-1x" aria-hidden="true"></i> Volver</a>
+        </li>
+			</ul>
+		</nav>
+
+    <section class="content-contact">
+      <article class="contact-article">
+        <header class="article-header text-c">
+          <p class="mt-10">Agenda una cita para que uno de nuestros tecnicos te visite.</p>
+          <p class="text-smp mt-10">Nuestro equipo se pondra en contacto contigo lo antes posible.</p>
+        </header>
+        <hr>
+        <form id="formContact">
+          <div class="grd-3-vt">
+            <div class="grid-2-hz mt-10">
+              <div>
+                <label class="form-label">Nombre(s):<i class="fa fa-diaspora fa-1x c-grey" aria-hidden="true"></i></label>
+                <div id="messageName" class="messageAlert text-c" hidden>
+                  <p>Favor de introducir solo letras.</p>
+                </div>
+                <input id="nameUser" class="nombre" type="text" name="name" autocomplete="off" maxlength="20" title="Por favor introduce tu nombre(s)." onkeyup="validar(1)" onblur="validar(1)" required>
+              </div>
+              <div>
+                <label class="form-label">Apellidos:<i class="fa fa-diaspora fa-1x c-grey" aria-hidden="true"></i></label>
+                <div id="messageLastname" class="messageAlert text-c" hidden>
+                  <p>Favor de introducir solo letras.</p>
+                </div>
+                <input id="lastnameUser" type="text" name="lastName" autocomplete="off" maxlength="60" title="Por favor introduce tus apellidos."  onkeyup="validar(2)" onblur="validar(2)" required>
+              </div>
+            </div>
+            <div class="grid-2-hz">
+              <div>
+                <label class="form-label">Telefono:<i class="fa fa-diaspora fa-1x c-grey" aria-hidden="true"></i></label>
+                <div id="messagePhone1" class="messageAlert text-c" hidden>
+                  <p>Favor de introducir solo números.</p>
+                </div>
+                <div id="messagePhone2" class="messageAlert text-c" hidden>
+                  <p>Favor de introducir tu número celular a 10 digitos. Ejemplo: 0123456789 ó 012 345 6789.</p>
+                </div>
+                <input id="phoneUser" type="text" name="phone" autocomplete="off" maxlength="12" title="Por favor introduce tu número celular." onkeyup="validar(3)" onblur="validar(4)" required>
+              </div>
+              <div>
+                <label class="form-label">Correo:<i class="fa fa-diaspora fa-1x c-grey" aria-hidden="true"></i></label>
+                <div id="messageEmail" class="messageAlert text-c" hidden>
+                  <p>Lo sentimos, hay caracteres no permitidos.</p>
+                </div>
+                <input id="emailUser" type="mail" name="email" autocomplete="off" maxlength="60" title="Por favor introduce tu correo electronico." placeholder="mail@example.com" onkeyup="validar(5)" onblur="validar(5)" required>
+              </div>
+            </div>
+            <div>
+              <label class="form-label">Descripción:</label>
+              <div id="messageDescription" class="messageAlert text-c" hidden>
+                <p>Lo sentimos, hay caracteres no permitidos.</p>
+              </div>
+              <textarea id="descriptionUser" name="description" title="Por favor introduce una breve descripción del por que nos contactas." placeholder="Da una breve descripción del por que nos contactas.(Opcional)" onkeyup="validar(6)" onblur="validar(6)"></textarea>
+              <p class="text-smp ml-10"><i class="fa fa-diaspora fa-1x c-grey" aria-hidden="true"></i> Datos obligatorios</p>
+              <div class="text-c mt-10">
+                <button id="button-submit" class="bttn-blue mb-15" type="submit" name="button">
+                  Enviar <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </article>
+    </section>
+
+    <footer class="bg-blue">
+      <div class="container-footer text-c grid-2-hz">
+        <div class="footer-banner">
+          <img src="../src/baner-Plomelectrid.jpg" alt="Baner Plomelectrid" class="baner-plomelectrid">
+        </div>
+        <div class="text-l">
+          <h3 class="text-light text-title-2">Contacto:</h3>
+          <p class="text-light text-smp">Tel: (222) 420 7408</p>
+            <p class="text-light text-smp">Correo: plomelectrid@gmail.com</p>
+          <button class="bttn-whatsapp mt-10" type="button" onclick="window.open('https://wa.me/message/UOZXOXDK7QAUF1', '_blank');">
+            <i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i>
+          </button>
+          <button class="bttn-facebook mt-10" type="button" onclick="window.open('https://www.facebook.com/Plomelectrid', '_blank');">
+            <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+      <p class="text-light text-c copyright">Plomelectrid &copy; 2022 - All Rights Reserved.</p>
+    </footer>
+
+    <!--JAVA SCRIPT-->
+    <script src="../js/appContact.js"></script>
+  </body>
+</html>

@@ -1,0 +1,139 @@
+/* > > > > > > > >  NAV  < < < < < < < < */
+.content-nav{
+	background-color: rgb(50,100,140);
+	font-weight: bold;
+	text-align: right;
+	box-shadow: rgba(0,0,20,0.25) 0px 6px 6px 0px;
+}
+
+.content-nav a{
+	/* color: rgb(50,100,140); */
+	color: rgb(255, 255, 255);
+}
+
+.content-nav li{
+	display: inline-block;
+	font-size: 15px;
+	list-style: none;
+	padding: 5px;
+	margin-top: 5px;
+}
+
+.content-nav li:last-child{
+	margin-left: 7px;
+	margin-right: 12px;
+}
+
+.nav-return{
+	background-color: rgba(0,0,0,0);
+	border-top: 5px solid;
+	border-top-color: rgba(0,0,0,0);
+	border-top-right-radius: 6px;
+	border-top-left-radius: 6px;
+	transition: border-top-color .55s, background-color .55s;
+}
+
+.nav-return:hover{
+	color: rgb(240, 240, 240);
+	border-top-color: rgb(255, 255, 255);
+	transition: all .3s ease-in-out;
+}
+/* > > > > > > > >  SECTION  < < < < < < < < */
+.content-contact{
+  width: 90vw;
+  margin: auto;
+  overflow: hidden;
+  padding: 2rem;
+}
+
+article{
+	background-color: rgb(252,252,252);
+	border: 1px solid;
+	border-radius: 10px;
+	box-shadow: rgba(0,0,20,0.25) 0px 0px 0px 0px;
+	margin: 0px auto;
+	transition: box-shadow .55s;
+	width: 55%;
+}
+
+article:hover{
+	box-shadow: rgba(0,0,20,0.25) 12px 9px 4px 0px;
+	transition: all .2s ease-in-out;
+}
+
+.article-header{
+	padding: 5px;
+}
+.form-label{
+	font-size: 12px;
+	margin-left: 10px;
+}
+
+/* > > > > > > > >  Letter  < < < < < < < < */
+.c-grey{
+	color: rgba(40, 40, 40, 0.5);
+}
+/* >>> I <<< */
+input[type="text"]{
+	background: rgba(50, 50, 80, 0.2);
+	border: none;
+	border-bottom: 1px solid rgb(0,0,0);
+	border-top-right-radius: 10px;
+	color: rgb(0,0,0);
+	height: 20px;
+	margin-left: 5px;
+	margin-bottom: 10px;
+	outline: none;
+}
+
+input[type="mail"]{
+	background: rgba(50, 50, 80, 0.2);
+	border: none;
+	border-bottom: 1px solid rgb(0,0,0);
+	border-top-right-radius: 10px;
+	color: rgb(0,0,0);
+	height: 20px;
+	margin-left: 5px;
+	margin-bottom: 10px;
+	outline: none;
+}
+
+/* >>> M <<< */
+.messageAlert{
+	color: rgb(255, 255, 255);
+	font-size: 10px;
+	background-color: rgb(255, 0, 0);
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+.ml-10{
+	margin-left: 10px;
+}
+
+/* >>> P <<< */
+.pd-b-0{
+	padding-bottom: 0px;
+}
+
+.mr-20{
+	padding-right: 20px;
+}
+
+
+
+/*  T  */
+textarea{
+	margin-left: 5px;
+	height: 20vh;
+	width: 95%;
+}
+
+
+
+
+@media (max-width: 640px) {
+	article{
+		width: 70%;
+	}
+}
